@@ -4,6 +4,8 @@ import MetalBg from "../Utils/Images/femaleRobo.png";
 import webProg from "../Utils/Images/coding.png";
 import gridImg from "../Utils/Images/grid.svg";
 import vsCode from "../Utils/Images/b5.svg";
+import exp1Img from "../Utils/Images/exp1.svg";
+import exp2Img from "../Utils/Images/exp2.svg";
 
 
 
@@ -13,21 +15,21 @@ import Projects from "./Projects";
 const Body = () => {
     return (
         <div className="">
-            <div className="relative w-full bg-black">
+            <div className="relative w-full">
                 <Header />
-                <div className="relative w-full h-full">
-                    <img
+                <div className="relative w-full h-full ">
+                    {/* <img
                         className=" lg:w-full h-full object-cover"
                         src={homeBg}
                         alt="HomeBg"
-                    />
+                    /> */}
                     <img
                         className=" absolute top-0 left-0  w-full  "
                         src={MetalBg}
                         alt="HomeBg"
                     />
-                    <div className="absolute top-0 left-0 pt-[13%] px-[9%] text-white z-10">
-                        <h3 className="font-iDroid text-7xl">
+                    <div className=" absolute top-0 left-0 pt-[13%] px-[9%] text-white z-10  lg:text-7xl ">
+                        <h3 className="font-iDroid ">
                             Dhai<span className="text-pink-400">r</span>ya
                         </h3>
                         <div className="flex">
@@ -36,11 +38,11 @@ const Body = () => {
                                 src={webProg}
                                 alt="progIcon"
                             ></img>
-                            <h3 className="ml-11 font-iDroid text-7xl">
+                            <h3 className="ml-11 font-iDroid ">
                                 Fr<span className="text-coustomGreen">o</span>ntend
                             </h3>
                         </div>
-                        <h3 className="font-iDroid text-7xl">
+                        <h3 className="font-iDroid ">
                             d<span className="text-pink-400">e</span>vel
                             <span className="text-coustomGreen">o</span>per
                         </h3>
@@ -65,7 +67,7 @@ const Body = () => {
                         </div>
                     </div>
                 </div>
-                <div className="absolute top-[27%] w-full ">
+                <div className="absolute mt-[45%] top-[27%] w-full ">
                     <section className="mx-[6%]  text-white" id="about">
                         <div className="grid grid-cols-1 md:grid-cols-6 lg:grid-cols-5 md:grid-row-7 gap-4 lg:gap-8 mx-auto w-full py-20">
                             <div class="row-span-1 relative overflow-hidden rounded-3xl group bg-white/10 border  border-transparent p-10 transition-all duration-500 ease-in-out hover:border-coustomGreen hover:shadow-[0_0_10px_4px_theme('colors.coustomGreen')]  justify-between grid grid-cols-2 lg:col-span-3 md:col-span-6 md:row-span-4 lg:min-h-[38vh] backdrop-blur-sm">
@@ -150,11 +152,32 @@ const Body = () => {
                     </section>
                     <Projects />
                     <div className="px-[6%] pt-10 text-white">
-                    <h1
-              className="text-4xl text-center font-bold">My 
-              <span className="text-coustomGreen"> work</span> 
-              <span className="text-pink-400"> experience</span>
-            </h1>
+                        <div><h1
+                            className="text-4xl text-center font-bold">My
+                            <span className="text-coustomGreen"> work</span>
+                            <span className="text-pink-400"> experience</span>
+                        </h1></div>
+                        <div className="w-full mt-12 grid lg:grid-cols-4 grid-cols-1 gap-10">
+                            <div className="md:col-span-2 md:row-span-1 rounded-3xl  bg-gray-400  backdrop-filter backdrop-blur-sm bg-opacity-10 hover:shadow-white/75 hover:shadow">
+                                <div className="flex lg:flex-row flex-col lg:items-center p-3 py-6 md:p-5 lg:p-9 gap-2">
+                                    <img src={exp1Img} alt="" />
+                                    <div className="lg:ms-5"> <h1 className="text-start text-xl md:text-3xl font-bold">Jr Software Developer at Cognizant</h1>
+                                        <p className="text-start text-white/80 mt-3 font-semibold">Developed and maintained high-quality software solutions using .Net, HTML, CSS and JavaScript while collaborating with cross-functional teams to implement new features and optimize system performance.</p></div>
+
+                                </div>
+                            </div><div className="md:col-span-2 md:row-span-1 rounded-3xl  bg-gray-400  backdrop-filter backdrop-blur-sm bg-opacity-10 hover:shadow-white/75 hover:shadow">
+                                <div className="flex lg:flex-row flex-col lg:items-center p-3 py-6 md:p-5 lg:p-9 gap-2">
+                                    <img src={exp2Img} alt="" />
+                                    <div className="lg:ms-5"> <h1 className="text-start text-xl md:text-2xl font-bold">
+                                        Frontend Developer & Hardware Engineer Internship at Ch Point</h1>
+                                        <p className="text-start text-white/80 mt-3 font-semibold">Developed and maintained high-quality software solutions using .Net, HTML, CSS and JavaScript while collaborating with cross-functional teams to implement new features and optimize system performance.</p></div>
+
+                                </div>
+                            </div>
+
+                        </div>
+
+
                     </div>
 
                 </div>
