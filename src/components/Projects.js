@@ -9,7 +9,7 @@ import Ytube from "../Utils/Images/Ytube.png";
 
 const Projects = () => {
   return (
-    <div className="px-[6%] pt-10  text-white ">
+    <div id='projects' className="px-[6%] pt-10  text-white ">
       <h1
         className="text-4xl text-center font-bold
                         "
